@@ -22,7 +22,7 @@ return [...text].map((char, i) => (
 }
 
 const setupTextHover = (container, type ) => {
-    if(!container) return;
+    if(!container) return () => {} ;
 
     const letters = container.querySelectorAll("span");
     const {min, max, default: base } = FONT_WEIGHT[type];
