@@ -13,7 +13,7 @@ return [...text].map((char, i) => (
     <span className={className} key={i} style={{
         fontVariationSettings:`'wght' ${baseWeight}`}}>
 
-        {char === "" ? '\u00A0' : char}
+        {char === " " ? '\u00A0' : char}
     </span>
     )
 
